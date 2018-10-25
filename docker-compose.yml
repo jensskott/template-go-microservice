@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  microservice-template:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        appName: microservice-template
+        projectName: template-go-microservice
+        projectOwner: getndazn
+    ports:
+    - 3000:3000
+    environment:
+    - API_KEY=3e2ea893e92472046dd107f472995bab122ffef4bffecf1
+    - ENVIRONMENT=SF
+    - PORT=:3000

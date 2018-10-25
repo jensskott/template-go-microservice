@@ -1,0 +1,34 @@
+name: microservice-template
+version: v2
+exposure: true
+environment: dev
+kmskey: ops_kms_key
+loggroupname: microservice-template
+
+container:
+  containerport: 3000
+  cpu: 20
+  memoryreservation: 128
+  memory: 256
+
+  environment:
+  - name: API_KEY
+    value: 3e2ea893e92472046dd107f472995bab122ffef4bffecf1
+  - name: ENVIRONMENT
+    value: DEV
+
+  image: ecr-somthing-20393902/microservice-template:latest
+
+  sidecar: false
+
+  dockerlabels:
+    com.dazn.version: "1.0.0"
+    com.dazn.region: "eu-central-1"
+    com.dazn.service: "microservice-template"
+    com.dazn.environment: "dev"
+
+  logstreamprefix: template-
+
+deployment:
+  context: /v1/template
+count: 1
