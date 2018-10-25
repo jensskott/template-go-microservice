@@ -8,18 +8,6 @@
   version = "v1.1.1"
 
 [[projects]]
-  branch = "develop"
-  name = "github.com/getndazn/odin"
-  packages = [
-    "cfg",
-    "convert",
-    "handlers",
-    "newrelic",
-    "query"
-  ]
-  revision = "e487367a13c2b71f9beed6fce7654c3c550922a2"
-
-[[projects]]
   name = "github.com/gin-contrib/cors"
   packages = ["."]
   revision = "cf4846e6a636a76237a28d9286f163c132e841bc"
@@ -53,12 +41,6 @@
   packages = ["proto"]
   revision = "aa810b61a9c79d51363740d207bb46cf8e620ed5"
   version = "v1.2.0"
-
-[[projects]]
-  name = "github.com/joho/godotenv"
-  packages = ["."]
-  revision = "23d116af351c84513e1946b527c88823e476be13"
-  version = "v1.3.0"
 
 [[projects]]
   name = "github.com/json-iterator/go"
@@ -144,6 +126,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "afb03771961130b904086544fd6babf8d686cb3c024692583bd20f3e0bab62d3"
+  inputs-digest = "98b129b9e0ccebc941b4de1c55f04cedc60cc556606bbc3e88ef72efe52c8057"
   solver-name = "gps-cdcl"
   solver-version = 1
