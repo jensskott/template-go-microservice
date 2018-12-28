@@ -1,16 +1,16 @@
-package handlers_test
+package controllers_test
 
 import (
 	"net/http"
 	"net/http/httptest"
 	"testing"
 
-	"github.com/getndazn/template-go-microservice/router"
 	"github.com/gin-gonic/gin"
+	"github.com/jensskott/template-go-microservice/lib/router"
 	"github.com/stretchr/testify/assert"
 )
 
-func TestHealth(t *testing.T) {
+func TestMyApp(t *testing.T) {
 	gin.SetMode(gin.ReleaseMode)
 
 	// Start new writer recorder
@@ -20,7 +20,7 @@ func TestHealth(t *testing.T) {
 	r := router.Setup()
 
 	// Create new request
-	req, _ := http.NewRequest("GET", "/health", nil)
+	req, _ := http.NewRequest("GET", "/v1/template/name", nil)
 
 	// Start test router
 	r.ServeHTTP(w, req)

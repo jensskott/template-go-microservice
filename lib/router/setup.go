@@ -3,10 +3,11 @@ package router
 import (
 	"time"
 
-	"github.com/getndazn/template-go-microservice/handlers"
-	"github.com/getndazn/template-go-microservice/middleware"
+	"github.com/jensskott/template-go-microservice/controllers"
+
 	"github.com/gin-gonic/contrib/ginrus"
 	"github.com/gin-gonic/gin"
+	"github.com/jensskott/template-go-microservice/lib/router/middleware"
 	"github.com/sirupsen/logrus"
 )
 
@@ -18,13 +19,13 @@ func Setup() *gin.Engine {
 	router.Use(middleware.Cors())
 
 	// Setup health path
-	router.GET("/health", handlers.Health)
+	router.GET("/health", controllers.Health)
 
 	// Setup router group
 	api := router.Group("/v1/template")
 
 	// Setup routes
-	api.GET("/name", handlers.MyApp)
+	api.GET("/name", controllers.MyApp)
 
 	return router
 }

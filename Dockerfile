@@ -36,8 +36,8 @@ ARG projectName
 ARG projectOwner
 ARG appName
 
-ENV GIN_MODE=release
-ENV PORT=:3000
+ENV GIN_MODE="release"
+ENV PORT=":3000"
 
 RUN apk --no-cache add ca-certificates
 

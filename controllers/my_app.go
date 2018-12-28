@@ -1,10 +1,10 @@
-package handlers
+package controllers
 
 import (
 	"net/http"
 
-	"github.com/getndazn/template-go-microservice/collect"
 	"github.com/gin-gonic/gin"
+	"github.com/jensskott/template-go-microservice/lib/collect"
 )
 
 func MyApp(c *gin.Context) {

@@ -1,10 +1,11 @@
 package router_test
 
 import (
-	"github.com/getndazn/template-go-microservice/router"
-	"github.com/gin-gonic/gin"
-	"github.com/stretchr/testify/assert"
 	"testing"
+
+	"github.com/gin-gonic/gin"
+	"github.com/jensskott/template-go-microservice/lib/router"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestSetup(t *testing.T) {

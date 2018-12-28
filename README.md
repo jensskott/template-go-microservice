@@ -33,8 +33,8 @@ Prepare environment:
 
 * Setup golang [golang.org](https://golang.org)
 * Install dep [Instructions](https://github.com/golang/dep)
-* Clone this repo into `$GOPATH/src/github.com/getndazn`
+* Clone this repo into `$GOPATH/src/github.com/<my github account>/`
 * Rename the directory to your app `mv template-go-microservice my-cool-app`
-* Reinit git, `rm -rf .git && git init`
+* Re init git, `rm -rf .git && git init`
 * Get dependencies `dep ensure`
 
