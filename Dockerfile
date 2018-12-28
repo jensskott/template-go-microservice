@@ -47,5 +47,5 @@ COPY --from=builder /go/src/github.com/${projectOwner}/${projectName}/build/${ap
 
 EXPOSE 3000
 
-CMD ["./microservice-template"]
+CMD ["./microservice-template-linux-amd64"]
 
