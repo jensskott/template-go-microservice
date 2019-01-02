@@ -1,7 +1,7 @@
 name: microservice-template
 version: v2
 exposure: true
-environment: dev
+environment: prod
 kmskey:
 loggroupname: microservice-template
 
@@ -17,7 +17,7 @@ container:
   - name: ENVIRONMENT
     value: DEV
 
-  image: ecr-somthing-20393902/microservice-template:latest
+  image: 908440369477.dkr.ecr.eu-central-1.amazonaws.com/ops-microservice-template:latest
 
   sidecar: false
 
@@ -32,4 +32,6 @@ container:
 deployment:
   context: /v1/template
   cloudfront: false
+  domain: operations.livesportdev.net
+  loggroupretention: 3
   count: 1

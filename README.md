@@ -23,10 +23,6 @@ build: tests the code then builds binary
 test-docker: special test stage for docker to integrate with sonarqube  
 build-docker: runs the docker build and creates the artifact container
 
-## Code structure
-
-TODO
-
 ## Usage
 
 Prepare environment: 
@@ -37,4 +33,11 @@ Prepare environment:
 * Rename the directory to your app `mv template-go-microservice my-cool-app`
 * Re init git, `rm -rf .git && git init`
 * Get dependencies `dep ensure`
+
+## Using nyx to deploy 
+
+```bash
+nyx --region eu-central-1 --project ops --cluster prod-ops repo --image microservice-template --file service.yaml  
+nyx --region eu-central-1 --project ops --cluster prod-ops service --file service.yaml 
+```
 
