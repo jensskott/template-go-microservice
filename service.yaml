@@ -17,7 +17,7 @@ container:
   - name: ENVIRONMENT
     value: DEV
 
-  image: 908440369477.dkr.ecr.eu-central-1.amazonaws.com/ops-microservice-template:latest
+  image: ecr-somthing-20393902/microservice-template:latest
 
   sidecar: false
 
