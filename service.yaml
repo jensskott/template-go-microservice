@@ -31,4 +31,5 @@ container:
 
 deployment:
   context: /v1/template
-count: 1
+  cloudfront: false
+  count: 1
