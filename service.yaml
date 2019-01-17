@@ -35,3 +35,4 @@ deployment:
   domain: operations.livesportdev.net
   loggroupretention: 3
   count: 1
+  healthpath: /health
